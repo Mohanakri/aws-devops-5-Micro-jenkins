@@ -1,0 +1,3 @@
+# src/python-service/requirements.txt
+Flask==2.3.0
+pytest==7.4.0
