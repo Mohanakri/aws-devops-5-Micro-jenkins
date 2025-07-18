@@ -1,4 +1,4 @@
-# src/java-maven-service/src/main/java/com/example/App.java
+# src/java-gradle-service/src/main/java/com/example/App.java
 package com.example;
 
 import org.springframework.boot.SpringApplication;
@@ -15,7 +15,7 @@ public class App {
     
     @GetMapping("/")
     public String home() {
-        return "Hi this is from java and maven is build package";
+        return "Hi this is from java and gradle is build package";
     }
     
     @GetMapping("/health")
