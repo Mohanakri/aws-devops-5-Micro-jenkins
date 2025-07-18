@@ -76,32 +76,5 @@ My-aws_devops_5-Micro-service/
 | `go-service`         | Go       | native     | A simple Go web service         |
 | `javascript-service` | Node.js  | npm        | A simple Node.js Express app    |
 
----
 
-## 🔁 CI/CD Pipeline Flow
-
-1. **Code Commit** – Code is pushed to GitHub.
-2. **Jenkins CI** – Jenkins pipeline triggers:
-   - Code Build & Lint
-   - Unit Testing
-   - Docker Image Build & Push
-   - Helm Chart Packaging (optional)
-3. **GitOps with ArgoCD** – Watches the Git repo and applies manifests to EKS.
-4. **Deployment to EKS** – Kubernetes manifests deployed to AWS EKS.
-
----
-
-## 🧪 Local Development
-
-Each service can be tested individually using Docker Compose:
-
-```bash
-docker-compose up --build
-You can also run services directly via:
-
-python app.py (Python)
-
-go run main.go (Go)
-
-node app.js (JavaScript)
 
