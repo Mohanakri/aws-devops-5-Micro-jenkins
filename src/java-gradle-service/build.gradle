@@ -1,18 +1,13 @@
 plugins {
     id 'application'
-    id 'java'
 }
 
-repositories {
-    mavenCentral()
-}
+group = 'com.example'
+version = '1.0'
+
+sourceCompatibility = '21'
+targetCompatibility = '21'
 
 application {
     mainClass = 'com.example.App'
-}
-
-java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(11)
-    }
 }
